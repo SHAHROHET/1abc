@@ -1,107 +1,336 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
 
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        #nav{
-            width: 100%;
-            height: 100vh;
-            background-image: url('image/Screenshot\ \(387\).png');
-            background-size: cover;
-            /* background-color: black ; */
-        }
-        nav{
-            width: 100%;
-            height: 80px;
-            background-color: #000; 
-        }
-        nav ul li{
-            list-style: none;
-            /* float: left; */
-            
-            transition: 0.6s;
-            display:inline-block;
-            
-            line-height: 80px;
-            font-size: 20px;
-            /* font-weight: bolder; */
-        }
-        nav ul{
-            float: right;
-            margin-right: 3px;
-        }
-        nav ul li:hover{
-            background-color: rgb(66, 66, 66);
-            text-decoration: black;
 
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: rgb(241, 241, 241);
-            padding: 30px;
-        }
-        /* nav ul li a.active  */
-         nav ul li a:hover{
-            /* text-decoration: underline; */
-            transition: 1.6s;
-        }
-        li a.active{
-            text-decoration: underline !important;
-        }
-        img{
-            height: 87px;
-            width: 105px;
-             margin-left: 65px; 
-        }
-        H1{
-            color: rgb(255, 167, 27);
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight:bolder;
-            /* font: bolder; */
-            font-size: 56px;
-            margin-left: 100PX;
-        }
-        #search{
+
+
+
+#id01 input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+ button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#link
+{
+    line-height:20px;
+    background-color: black;
+    overflow: hidden;
+    
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+div#link a
+{
+    line-height:20px;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+#img{
+    height: 50px;
+    float:left;
+}
+
+div#link a{
+    float: left;
+    display:inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.6s;
+  }
+div#link a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+   #search{
             border: 3px solid rgb(238, 203, 5);
             /* float: left; */
-            padding:  55px auto;
-            margin-bottom: 50px;
-            margin-right: 0px;
-            margin-top: 28px;
+           
             float: right;
             background-color: rgb(366, 222, 138);
             border-radius: 5px;
-        }
-        .active ,span:hover{
-              background-color: rgb(255, 251, 32);  
-        }
-        input{
-            height: 18px;
-            /* padding-right: px; */
-        }
-        .bg{
-            height: 1300px ;
-            background-image: url(image/xbg.jpg);
-        }
-        .HUNT{
-            /* margin: 100px 100px 100px 100px; */
-            color: rgb(255, 255, 255);
-            /* font: bold; */
-            font-family: 'Concert One', cursive;
-            margin: 510px auto;
-            display: block;
-            /* width: 1%; */
-            text-align: center;
-            font-size: 1.7cm;
+            font-family: Arial, Helvetica, sans-serif;
+          margin-top:15px;
+          box-sizing: border-box;
+   }
 
-        }
-        .btn{
-            /* scrollbar-shadow-color:110px rgb(255, 0, 0); */
+   .HUNT{
+    /* margin: 100px 100px 100px 100px; */
+  
+    /* font: bold; */
+    font-family: 'Concert One', cursive;
+   
+    display: block;
+    /* width: 1%; */
+    text-align: center;
+    font-size: 1.7cm;
+    background-color: rgba(255, 235, 205, 0.89);
+    box-shadow: rgba(38, 0, 255, 0.37) 30px 40px;
+    animation-name: example;
+    animation-duration: 5s;
+    margin-top: 0;
+   
+ 
+   
 
-            cursor: pointer;
-            border-radius: 5px;
-            display: block;
-            margin: 600px auto;
-        }
-        /* @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap'); */
+}
+
+@keyframes example {
+    from {background-color: rgba(255, 235, 205, 0.89)}
+    to {background-color: rgba(255, 255, 0, 0.589);}
+  }
+
+#hunt ,span:hover{
+    background-color: rgb(255, 251, 32);  
+}
+
+aside{
+    width:100%;
+    height:500px;
+   
+
+    clear: both;
+    background-image: url(wallaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+}
+ a:hover{
+    /* text-decoration: underline; */
+    transition: 1.6s;
+    text-decoration: none;
+   color: white;
+ }
+
+ footer{
+
+
+    
+    margin-top:200px;
+    line-height:60px;
+    padding-bottom:10px;
+    margin-bottom: 40px;
+    display:block;
+    max-width:100%;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: unset;
+    font-size: 60px;
+    
+    text-shadow: violet 4px 4px 5px;
+
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px; 
+
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));     
+
+    
+ }
+ #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 195, 255);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  #myBtn{
+      border-radius: 50%;
+      width: 60px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    height:px;
+    clear:both;
+    margin-top: 50px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  
+  .card img{
+      max-height: 300px;
+      max-width: 270px;
+      margin-left: 5px;
+  }
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow .5s ease-in-out infinite alternate;
+    background-color:black;
+   
+   left: 0;
+   bottom: 0;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  
   
