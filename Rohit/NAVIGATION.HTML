@@ -5,34 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="STYLE.CSS">
+    <link rel="stylesheet" type="text/css" href="style1.CSS">
 
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 
     <title>SHAH CAPITAL</title>
+    
 
-</head>
+  </head>
 
-<body>
-    <div id="nav">
-        <!-- <div style="width:500px;height:100px;border:1px solid #000;">This is a rectangle!</div> -->
-        <nav>
-            <!-- <div> -->
-                <img src="image/logo1.png" alt="Loading..">
-            <!-- </div> -->
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="https://newweb.nepalstock.com/live-market" target="_blank">LIVE MARKET</a></li>
-                <li><a href="https://newweb.nepalstock.com/marketdepth" target="_BLANK">MARKET DEPTH</a></li>
-                <li><a href="https://meroshare.cdsc.com.np/#/login" target="_blank">MEROSHARE</a></li>
-                <li><a href="https://newweb.nepalstock.com/charts" target="_blank">CHART</a></li>
-                
-                <input type="text" name="search" id="search" placeholder="🔍 Search this website">
-                
-            </ul>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+       
+        <!-- </div> -->
+
+        <div id="link">
+          <img src="logo1.png" alt="logo" id="img">
+        
+            <a href="#">HOME</a></li>
+            <a href="https://newweb.nepalstock.com/live-market" target="_blank">LIVE MARKET</a>
+            <a href="https://newweb.nepalstock.com/marketdepth" target="_BLANK">MARKET DEPTH</a>
+            <a href="https://meroshare.cdsc.com.np/#/login" target="_blank">MEROSHARE</a>
+            <a href="https://newweb.nepalstock.com/charts" target="_blank">CHART</a>
+            
+            <input type="text" name="search" id="search" placeholder="🔍 Search this website">
+            
+        
+
+         </div>
+
+         <section>
             <div class="HUNT">
                 <span style="color:#FF0000">W</span>
-                <span style="color:#fbff00">E</span>
+                <span style="color:#003cff">E</span>
                 <span style="color:#09ff00">L</span>
                 <span style="color:#6ed6ff">C</span>
                 <span style="color:#ff00aa">O</span>
@@ -40,19 +67,74 @@
                 <span style="color:#ffd900">E</span>
                 <!-- <a href=""><p style="text-decoration: none;color: chartreuse;">⬇</p></a> -->
             </div>
-        </nav>
 
-        <!-- <button class="btn">Scroll for more</button> -->
+            <aside>
+            
+            </aside>
 
 
+         </section>
+
+         <div id="bot">
+         
+
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar.png" alt="Avatar" class="avatar">
     </div>
-    <!-- <h1>SHAH INVESTMENT</h1> -->
-    <div class="bg">
-        <p>
 
-        </p>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
+  </form>
+</div>
+</div>
 
-</body>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
 
-</html>
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+         <div id="call">
+         <div class="card">
+          <img src="img_avatar.png" alt="img_avatar.png" style="width:100%">
+          <div class="container">
+            <h4><b>Agent:Rohit Shah</b></h4> 
+            <p>hacker and Engineer</p> 
+            <p>financer</p>
+          </div>
+          </div>
+          <button id="ss" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <footer>Thanks For Visiting</footer>
+        <div class="glow">Made by sidd</div>
+
+
+
+   </body>
+ 
+ </html>
