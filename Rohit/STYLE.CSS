@@ -1,0 +1,107 @@
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav{
+            width: 100%;
+            height: 100vh;
+            background-image: url('image/Screenshot\ \(387\).png');
+            background-size: cover;
+            /* background-color: black ; */
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color: #000; 
+        }
+        nav ul li{
+            list-style: none;
+            /* float: left; */
+            
+            transition: 0.6s;
+            display:inline-block;
+            
+            line-height: 80px;
+            font-size: 20px;
+            /* font-weight: bolder; */
+        }
+        nav ul{
+            float: right;
+            margin-right: 3px;
+        }
+        nav ul li:hover{
+            background-color: rgb(66, 66, 66);
+            text-decoration: black;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(241, 241, 241);
+            padding: 30px;
+        }
+        /* nav ul li a.active  */
+         nav ul li a:hover{
+            /* text-decoration: underline; */
+            transition: 1.6s;
+        }
+        li a.active{
+            text-decoration: underline !important;
+        }
+        img{
+            height: 87px;
+            width: 105px;
+             margin-left: 65px; 
+        }
+        H1{
+            color: rgb(255, 167, 27);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:bolder;
+            /* font: bolder; */
+            font-size: 56px;
+            margin-left: 100PX;
+        }
+        #search{
+            border: 3px solid rgb(238, 203, 5);
+            /* float: left; */
+            padding:  55px auto;
+            margin-bottom: 50px;
+            margin-right: 0px;
+            margin-top: 28px;
+            float: right;
+            background-color: rgb(366, 222, 138);
+            border-radius: 5px;
+        }
+        .active ,span:hover{
+              background-color: rgb(255, 251, 32);  
+        }
+        input{
+            height: 18px;
+            /* padding-right: px; */
+        }
+        .bg{
+            height: 1300px ;
+            background-image: url(image/xbg.jpg);
+        }
+        .HUNT{
+            /* margin: 100px 100px 100px 100px; */
+            color: rgb(255, 255, 255);
+            /* font: bold; */
+            font-family: 'Concert One', cursive;
+            margin: 510px auto;
+            display: block;
+            /* width: 1%; */
+            text-align: center;
+            font-size: 1.7cm;
+
+        }
+        .btn{
+            /* scrollbar-shadow-color:110px rgb(255, 0, 0); */
+
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 600px auto;
+        }
+        /* @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap'); */
+  
